@@ -1,37 +1,22 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        h1 {
-            color: green;
-        }
-
-        .box {
-            opacity: 0.6;
-            background-color: green;
-            height: 40px;
-            width: 200px
-        }
-
-        .rgba {
-            opacity: 0.8;
-            background-color: green;
-            background: rgba(76, 175, 80, 0.6);
-            height: 40px;
-            width: 200px
-        }
-    </style>
+    <link rel="stylesheet" href="./SupportFiles/CSS/mystyle.css" />
+    <title>My Codebase</title>
 </head>
-
 <body>
-    <center>
-        <h1>GeeksforGeeks</h1>
-        <div class="box">
-            <p>Transparency Box</p>
+    <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu">Menu</label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Services</li>
+                <li><a href="#"></a>Projects</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Blog</li>
+                <li><a href="#"></a>Contacts</li>
+            </ul>
         </div>
-        <div class="rgba">
-            <p>Transparency Using RGBA value</p>
-        </div>
-    </center>
+    </div>
 </body>
 </html>
