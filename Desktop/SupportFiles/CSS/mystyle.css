@@ -1,0 +1,127 @@
+body {
+    /*background-color: rgb(47, 47, 47);*/
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../Images/rock.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img {
+    background-color: transparent !important
+}
+.center1 {
+    position: absolute;
+    width: 75%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+}
+
+.center2 {
+    position: absolute;
+    width: 75%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+}
+
+.div1 {
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    top: 50%;
+    left: 12.5%;
+    transform: translateY(-50%);
+    background-color: rgb(63, 63, 63);
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(95, 95, 95);
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(191, 191, 191);
+}
+
+    .div1:hover {
+        background-color: rgb(79, 79, 79);
+    }
+
+.div2 {
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    top: 50%;
+    right: 12.5%;
+    transform: translateY(-50%);
+    background-color: rgb(55, 55, 55);
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(63, 63, 63);
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(191, 191, 191);
+}
+
+a:link {
+    color: rgb(191, 191, 191);
+}
+
+a:visited {
+    color: rgb(159, 159, 159);
+}
+.menu-content {
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0 0 50px;
+}
+
+.collapsible-menu {
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: transparent !important ;
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+    .collapsible-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .collapsible-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    .collapsible-menu label {
+        font-family: 'Sedgwick Ave Display', cursive;
+        font-size: 56px;
+        display: block;
+        cursor: pointer;
+        background: url(../Images/menu.png) no-repeat left center;
+        background-size: 120px;
+        padding: 10px 0 10px 130px;
+    }
+
+input#menu {
+    display: none;
+}
+input:checked + label {
+    background-image: url(../Images/close.png);
+    background-size: 90px;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(../Images/close.png);
+    background-size: 90px;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
